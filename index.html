@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>📖Books</title>
+  </head>
+  <style>
+    body{
+      background-color: #fce0d8;
+    
+    }
+    h1 {
+      color: #c94723;
+      text-align: center;
+      font-size: 60px;
+      font-family: serif;
+      font-weight: lighter;
+    }
+    h2 {
+      color: #e96f4d;
+      text-align: center;
+      font-size: 40px;
+      font-family: serif;
+      border:solid ;
+      border-radius: 5px;
+      padding: 15px;
+      font-weight: lighters;
+    }
+    p {
+      font-family: serif;
+      font-size: 20px;
+      margin: 30px;
+      border: 200px;
+      padding: 0 15px;
+      line-height: 32px;
+    }
+    ul {
+      font-size: 20px;
+      list-style-type: none;
+    }
+    img {
+      display: block;
+      margin: 0 auto;
+      padding: 15px;
+    }
+    button{
+      display: block;
+      margin: 0 auto;
+      font-size: 25px;
+      box-shadow:10px 10px 10px  #f0d4ce;
+      padding: 10px;
+      border:1px solid#c94723 ;
+      border-radius: 5px;
+      color:#c94723 ;
+      background-color: white;
+      transition:all 0.5s ease-in-out;
+
+    }
+    button:hover{
+      color:white;
+      background-color: #e96f4d;
+      cursor: pointer;
+    }
+
+    .info {
+      display: block;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 25px;
+      text-decoration: none;
+    }
+    .info:hover{
+      text-decoration:underline;
+    }
+    .advantage {
+      padding: 5px;
+    }
+    .content{
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 30px;
+      border: solid;
+      border-color:white;
+      border-radius: 6px;
+      background-color: white;
+
+
+    }
+    .coder{
+      color:#e96f4d
+    }
+  </style>
+  <body>
+    <div class="content">
+    <h1>📚Books</h1>
+    <h2>Best friend of humans</h2>
+
+      <p>
+        In the 11th century, a Japanese woman known as Murasaki Shikibu wrote
+        “The Tale of Genji,” a 54-chapter story of courtly seduction believed to
+        be the world’s first novel. Nearly 2,000 years later, people the world
+        over are still engrossed by novels — even in an era where stories appear
+        on handheld screens and disappear 24 hours later. What exactly do human
+        beings get from reading books? Is it just a matter of pleasure, or are
+        there benefits beyond enjoyment? The scientific answer is a resounding
+        “yes.” Reading books benefits both your physical and mental health, and
+        those benefits can last a lifetime. They begin in early childhood and
+        continue through the senior years. Here’s a brief explanation of how
+        reading books can change your brain — and your body — for the better.
+      </p>
+      <ul>
+        <li class="advantage">Reading strengthens your brain</li>
+        <li class="advantage">Increases your ability to empathize</li>
+        <li class="advantage">Builds your vocabulary</li>
+        <li class="advantage">Helps prevent age-related cognitive decline</li>
+        <li class="advantage">Reduces stress</li>
+        <li class="advantage">Prepares you for a good night’s rest</li>
+        <li class="advantage">Helps alleviate depression symptoms</li>
+        <li class="advantage">May even help you live longer</li>
+      </ul>
+    </body>
+  <a
+      href="https://www.healthline.com/health/benefits-of-reading-books"
+      target="_blank"
+      class="info"
+    >
+      learn more
+    </a>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/104/original/getty_587536358_2000133320009280405_395605.jpg?1639860742"
+      alt="books"
+      width="500px"
+    />
+    
+
+    <button>😍 buy books</button>
+    <hr/>
+    <span class="coder">
+  <em>   Coded by <strong>Fateme Amlahi</strong></span>
+    </em>
+    </span>
+    </div>
+  </body>
+  <script>
+    function user(){
+    let name=prompt("What is your name?");
+    let email=prompt("What is your email?");
+    let age=prompt("How old are you?");
+    if(age<=12){
+      alert("Hi "+name+"! Consider choosing middle grade books 👧🏽.We will contact you by your email to find the best book for you.");
+
+    }else{
+      if(12<age<=18){
+        alert("Hi "+name+"! Consider choosing young adult book👩🏻.We will contact you by your email to find the best book for you.");
+
+
+      }else{
+        if(18<age){
+           alert("Hi "+name+"! Consider choosing adult book👨🏾.We will contact you by your email to find the best book for you.");
+        }
+      }
+        
+        }
+      
+    }
+    
+    let button = document.querySelector("button");
+      button.addEventListener("click", user);
+  </script>
+
+</html>
